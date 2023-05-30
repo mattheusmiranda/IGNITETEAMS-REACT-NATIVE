@@ -19,9 +19,6 @@
       "@storege/*": [
         "./src/storege/*"
       ],
-      "@theme/*": [
-        "./src/theme/*"
-      ],
       "@utils/*": [
         "./src/utils/*"
       ],
