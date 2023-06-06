@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 export const Container = styled.View`
     width: 100%;
     flex-direction: row;
+
     align-items: center;
     justify-content: center;
 `;
@@ -18,8 +19,9 @@ export const BackButton = styled.TouchableOpacity`
 `;
 
 export const BackIcon = styled(Icon).attrs(({ theme }) => ({
-    name: 'chevron-left', // Nome do ícone de seta para a esquerda
     size: 24,
-    color: theme.COLORS.WHITE
+    color: theme.COLORS.WHITE,
+
+    name: 'chevron-left', // Nome do ícone de seta para a esquerda
 }))``;
 
