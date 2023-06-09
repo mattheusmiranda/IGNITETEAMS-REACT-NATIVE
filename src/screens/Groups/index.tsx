@@ -12,7 +12,7 @@ import { Button } from '@components/Button';
 
 
 export function Groups() {
-    const [groups, setGroups] = useState<string[]>(["Turma do truco"]);
+    const [groups, setGroups] = useState<string[]>(["Galera do Ignite", "Galera do Discover"]);
 
     return (
         <Container>
