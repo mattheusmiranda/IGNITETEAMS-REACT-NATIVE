@@ -1,7 +1,7 @@
 import theme from './src/theme';
 import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components';
-import { NewGroups } from '@screens/NewGroups';
+import { Players } from '@screens/Players';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import { Loading } from '@components/Loading';
 
@@ -13,7 +13,7 @@ export default function App() {
       <StatusBar
         barStyle={'light-content'}
       />
-      {fontsLoader ? <NewGroups /> : <Loading />}
+      {fontsLoader ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
