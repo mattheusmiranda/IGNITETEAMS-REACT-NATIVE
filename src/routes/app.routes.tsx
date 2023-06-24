@@ -19,7 +19,7 @@ export function AppRoutes() {
             />
 
             <Screen
-                name='newGroups'
+                name='new'
                 component={NewGroups}
             />
         </Navigator>
