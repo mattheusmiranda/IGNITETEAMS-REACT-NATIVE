@@ -3,8 +3,19 @@ import { Container, Content, IconPersons } from './styles';
 import { Highlight } from '@components/Highlight';
 import { Button } from '@components/Button';
 import { Input } from '@components/Input';
+import { useNavigation } from '@react-navigation/native';
+import { useState } from 'react';
 
 export function NewGroups() {
+
+    const [group, setGroup] = useState('');
+
+    const navigation = useNavigation();
+
+    function hendleNew() {
+        navigation.navigate('players', { group });
+    }
+
     return (
         <Container>
             <Header showBackButton />
@@ -19,11 +30,13 @@ export function NewGroups() {
 
                 <Input
                     placeholder='Nome da turma'
+                    onChangeText={setGroup}
                 />
 
                 <Button
                     title='Criar'
                     style={{ marginTop: 20 }}
+                    onPress={hendleNew}
                 />
 
             </Content>
