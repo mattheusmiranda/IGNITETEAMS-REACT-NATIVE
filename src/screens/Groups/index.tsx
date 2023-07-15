@@ -30,6 +30,10 @@ export function Groups() {
         }
     }
 
+    function hendleOpenGroup(group: string) {
+        navigation.navigate("players", { group });
+    }
+
     useFocusEffect(useCallback(() => {
         console.log("useCallback executou")
         fetchGroups();
@@ -51,6 +55,7 @@ export function Groups() {
                 renderItem={({ item }) => (
                     <GroupCard
                         title={item}
+                        onPress={() => hendleOpenGroup(item)}
                     />
                 )}
 
